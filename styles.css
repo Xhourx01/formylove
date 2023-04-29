@@ -1,0 +1,24 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.text {
+  position: absolute;
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #ff69b4;
+  background: linear-gradient(45deg, #ff69b4, #ff1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: floatAnimation 5s linear infinite;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(calc(var(--translate-x) * 5px), calc(var(--translate-y) * 5px));
+  }
+}
